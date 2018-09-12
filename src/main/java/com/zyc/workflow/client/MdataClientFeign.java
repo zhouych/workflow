@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient(value = "mdata", fallback = MdataClientFeignHystrix.class)
 public interface MdataClientFeign {
 	
-	@RequestMapping(method = RequestMethod.GET, value = "/mdata/dimension/categories")
+	@RequestMapping(method = RequestMethod.GET, value = "/dimension/categories")
 	String dimensionCategories();
 	
 }
